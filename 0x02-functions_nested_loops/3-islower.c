@@ -1,8 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <ctype.h>
-/*
- * Write a function that checks for lowercase character.
+
+/**
+ * _islower - Checks if a character is lowercase.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is lowercase, 0 otherwise.
  */
 int _islower(int c)
 {
@@ -10,7 +13,8 @@ if (islower(c) != 0)
 {
 return (1);
 }
-else 
+else
+
 {
 return (0);
 }
