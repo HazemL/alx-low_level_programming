@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
 *add-function sum two number
-*@num1: paramter checked
-*@num2: paramter checked
+*@i: paramter checked
+*@x: paramter checked
 *
 *Return: function return the sumation of two paramters
 */
