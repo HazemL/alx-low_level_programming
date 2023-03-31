@@ -1,23 +1,20 @@
-es (18 sloc)  287 Bytes
-
-#include "main.h"
+#include "holberton.h"
 
 /**
-*string_toupper - make string string_toupper
-*arr: array of charachter
-*return: arr as upper
-*/
-char *string_toupper(char *str)
+ * string_toupper - changing string to upper function
+ * @strs : string pointer
+ * Return: Always 0.
+ */
+char *string_toupper(char *strs)
 {
-	int i;
+	int a;
 
-	i = 0;
-
-	while (str[i] != '\0')
+	for (a = 0; strs[a] != '\0'; a++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] -= 'a' - 'A';
-		i++;
+		if (strs[a] >= 'a' && strs[a] <= 'z')
+		{
+			strs[a] = strs[a] - 32;
+		}
 	}
-	return (str);
+	return (strs);
 }
