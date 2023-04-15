@@ -1,27 +1,27 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
-*_calloc - allocate memory of @size .
-*@nmemb: size of type
-*@size: num of element.
-*Return: pointer to newarr;
-*/
+ * _calloc - Allocate memory for array of nmemb elements of size bytes
+ * @nmemb: Number of elemnts
+ * @size: Size in bytes of elements
+ *
+ * Return: Pointer to new memory, NULL if it fails
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *arr;
-<<<<<<< HEAD
-if (nmemb == 0 || size == NULL)
-=======
-if (nmemb == 0 || size == 0)
->>>>>>> 875bf23d576f7ea217187ec2c20d8d65272c5f14
-return (NULL);
+	char *ar;
+	unsigned int ar_size, i;
 
-arr = calloc(nmemb, size);
-if (arr == NULL)
-return (NULL);
-
-return (arr);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	ar_size = nmemb * size;
+	ar = malloc(ar_size);
+	if (ar == NULL)
+		return (NULL);
+	while (i < ar_size)
+	{
+		ar[i] = 0;
+		i++;
+	}
+	return (ar);
 }
-
-
